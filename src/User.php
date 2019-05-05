@@ -22,6 +22,16 @@ class User implements Authenticatable
     }
 
     /**
+     * Get the claims decoded from JWT .
+     *
+     * @return string
+     */
+    public function getClaims()
+    {
+        return $this->claims;
+    }
+
+    /**
      * Get the name of the unique identifier for the user.
      *
      * @return string
